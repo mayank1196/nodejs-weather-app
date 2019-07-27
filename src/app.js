@@ -182,7 +182,7 @@ app.get('*',(req,res)=>{
 })
 
 app.listen(port, () => {
-    console.log('Server  s up on port 3000.'+port)
+    console.log('Server  s up on port port.'+port)
 })
 // const path = require('path')
 // const express = require('express')
