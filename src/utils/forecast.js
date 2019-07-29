@@ -13,7 +13,7 @@ request({url:url,json:true},(error,response)=>
         callback('unable to detect the location',undefined)
      }
      else{
-         callback(undefined,response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. There is a ' + response.body.currently.precipProbability + '% chance of rain.')
+         callback(undefined,response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. There is a ' + response.body.currently.precipProbability + '% chance of rain.The highest temperature is '+response.body.daily.data[0].temperatureHigh+'.The lowest temperature is '+response.body.daily.data[0].temperatureLow)
      }
 })
 
